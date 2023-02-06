@@ -33,7 +33,7 @@ def parse(arg):
 
 class HBNBCommand(cmd.Cmd):
     """This class handles the airbnb clone command interpreter"""
-    prompt = "(hbnb)"
+    prompt = "(hbnb) "
     __classes = {
         "BaseModel",
         "User",
@@ -70,7 +70,7 @@ class HBNBCommand(cmd.Cmd):
         return False
 
     def do_quit(self, arg):
-        """Quit command"""
+        """Quit command to exit the program"""
         return True
 
     def do_EOF(self, arg):
